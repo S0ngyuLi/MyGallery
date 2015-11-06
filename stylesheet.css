@@ -45,3 +45,39 @@ margin-top:-10px;
   margin-right:auto;
 
 }
+
+#resume{
+  font-size: 26px;
+  font-family:Cambria;
+  position:absolute;
+  top:26px;
+
+  margin-left:730px;
+  margin-right:auto;
+  color:black;
+}
+#resume-link:active{
+
+  text-decoration:none;
+}
+#resume-link:visited{
+  text-decoration:none;
+}
+
+#github{
+  font-size: 26px;
+  font-family:Cambria;
+  position:absolute;
+  top:26px;
+
+  margin-left:860px;
+  margin-right:auto;
+  color:black;
+}
+#github-link:active{
+
+  text-decoration:none;
+}
+#github-link:visited{
+  text-decoration:none;
+}
