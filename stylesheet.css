@@ -26,7 +26,7 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
 #left-colomn{
   z-index: 100;
   position:absolute;
-  top:20%;
+  top:110px;
   left:2%;
   width:33%;
   height:100%;
@@ -34,7 +34,7 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
 #middle-colomn{
   z-index: 200;
   position:absolute;
-  top:20%;
+  top:110px;
   left:35%;
   width:33%;
   height:100%;
@@ -42,7 +42,7 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
 #right-colomn{
   z-index: 300;
   position:absolute;
-  top:20%;
+  top:110px;
   left:68%;
   width:32%;
   height:100%;
