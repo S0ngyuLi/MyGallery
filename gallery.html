@@ -1,9 +1,16 @@
 <html>
   <head>
+    <script>
+    function Display_Author(){
+
+      alert("Author: Songyu Li \nUniversity of Illinois at Urbana-Champaign");
+    }
+
+    </script>
     <title>
       Songyu's Gallery
     </title>
-    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <link type="text/css" rel="stylesheet" href="gallery-stylesheet.css"/>
   </head>
 <body>
 
@@ -24,6 +31,12 @@
       <div class = "button" id = "b3">
         <a id = "home-link" class = "button-link" href = "http://S0ngyuLi.github.io">
           Home
+        </a>
+      </div>
+
+      <div class = "button" id = "b4">
+        <a id = "author-info"class = "button-link" onclick="Display_Author()" href = "gallery.html">
+          About author
         </a>
       </div>
     </div>
@@ -122,6 +135,7 @@
   </div>
 
   </div>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </body>
 
