@@ -72,10 +72,13 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
 }
 
 #logo{
+  z-index: 9998;
   position: relative;
+  width: 40%;
   left: 35%;
   top: 5px;
 }
+
 
 #menu-bar{
   position: fixed;
@@ -105,17 +108,14 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
 }
 
 #b4{
+  z-index: 9999;
   position: absolute;
   right:-20%;
   top:40%;
 }
 
-a.button-link{
-  font-family:monospace;
-}
-
-
 .button-link{
+  font-family:monospace;
   font-size: 20px;
   color:black;
   text-decoration: none;

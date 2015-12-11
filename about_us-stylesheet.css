@@ -15,47 +15,56 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
 
 }
 #all{
-  position:fixed;
+  position:absolute;
   top:0px;
   left:0px;
   width:100%;
-  height: 6000%;
+  height:680px;
 }
 
 #myP{
-
   position:absolute;
-  top: 120px;
+  top: 130px;
   left: 10%;
   right: 10%;
-  width:auto;
+  width:80%;
+  height:300px;
 
-  background-color: white;
+  background-color: #F8F8F8;
   border-radius: 8px;
+
 }
 
+#myphoto{
+  width: 130px;
+}
 
 #Personal_Intro{
+
+
+    position: relative;
+    top: 0px;
+    left:20px;
+    right:50px;
     padding-top: 70px;
     padding-bottom: 70px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 30px;
+    padding-left: 30px;
 
-    font-size: 20px;
-    font-family: Cambria;
-    color:black;
+
+
 }
 
-#profile{
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  width:30%;
-  height: 40%;
+p{
+
+  font-size: 20px;
+  font-family: Cambria;
+  color:black;
+
 }
+
 
 #top{
-
  position: fixed;
  top: 0;
  left: 0;
@@ -64,6 +73,7 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
  height:95px;
  background-color: #56b2d1;
 }
+
 #top-bottom{
 
  position: fixed;
@@ -75,7 +85,9 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
  background-color:#3295B7;
 }
 #logo{
+  z-index: 9999;
   position: relative;
+  width: 40%;
   left: 35%;
   top: 5px;
 }
@@ -113,12 +125,9 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
   top:40%;
 }
 
-a.button-link{
-  font-family:monospace;
-}
-
 
 .button-link{
+  font-family:monospace;
   font-size: 20px;
   color:black;
   text-decoration: none;
