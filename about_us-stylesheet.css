@@ -3,14 +3,8 @@ body{
   background-repeat: repeat-y，repeat-x;
   background-attachment: fixed;
 }
-.drawing{
-  position:relative;
-  left:0;
-}
-.padding{
-  height:20px;
-  width:100%;
-}
+
+
 .imge{
 border-radius: 8px;
 width:93%;
@@ -21,34 +15,43 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
 
 }
 #all{
-  top: 100px;
-  left: 0;
+  position:fixed;
+  top:0px;
+  left:0px;
   width:100%;
-  height: auto;
+  height: 6000%;
 }
-#left-colomn{
-  z-index: 100;
+
+#myP{
+
   position:absolute;
-  top:110px;
-  left:2%;
-  width:33%;
-  height:100%;
+  top: 120px;
+  left: 10%;
+  right: 10%;
+  width:auto;
+
+  background-color: white;
+  border-radius: 8px;
 }
-#middle-colomn{
-  z-index: 200;
-  position:absolute;
-  top:110px;
-  left:35%;
-  width:33%;
-  height:100%;
+
+
+#Personal_Intro{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-right: 80px;
+    padding-left: 80px;
+
+    font-size: 20px;
+    font-family: Cambria;
+    color:black;
 }
-#right-colomn{
-  z-index: 300;
-  position:absolute;
-  top:110px;
-  left:68%;
-  width:32%;
-  height:100%;
+
+#profile{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width:30%;
+  height: 40%;
 }
 
 #top{
@@ -62,6 +65,7 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
  background-color: #56b2d1;
 }
 #top-bottom{
+
  position: fixed;
  top: 95px;
  left: 0;
@@ -70,7 +74,6 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
  height:5px;
  background-color:#3295B7;
 }
-
 #logo{
   position: relative;
   left: 35%;

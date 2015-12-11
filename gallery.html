@@ -1,12 +1,5 @@
 <html>
   <head>
-    <script>
-    function Display_Author(){
-
-      alert("Author: Songyu Li \nUniversity of Illinois at Urbana-Champaign");
-    }
-
-    </script>
     <title>
       Songyu's Gallery
     </title>
@@ -16,7 +9,12 @@
 
 
   <div id = "top">
-    <img id = "logo" src = "src/logo.png" height = "80px" width = "480px"/>
+  <!--  <img id = "logo" src = "src/logo.png" height = "80px" width = "480px"/> -->
+  <div id = "logo">
+    <a class = "logo-href" href = "/gallery.html">
+    Songyu's Gallery
+  </a>
+  </div>
     <div id = "menu-bar">
       <div class = "button" id = "b1">
       <a id = "resume-link" class = "button-link" href = "src/resume.pdf">
@@ -35,7 +33,7 @@
       </div>
 
       <div class = "button" id = "b4">
-        <a id = "author-info"class = "button-link" onclick="Display_Author()" href = "gallery.html">
+        <a class = "button-link" href = "about_us.html">
           About author
         </a>
       </div>
