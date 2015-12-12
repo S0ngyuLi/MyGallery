@@ -39,18 +39,24 @@
 </nav>
 
 <div id = "top-bottom">
-
 </div>
+
 <div id = "all">
-  <button onclick="addImage(2)">
+
+  <button id = "test-button" onclick="addImage(2)">
     show image
   </button>
-<script>
-function addImage(index){
-  document.getElementById("all").innerHTML = "<img ALIGN='center' " + "SRC='src/" + index + ".jpg'>";
-}
-</script>
+  <div id = "pic">
+  </div>
+
 </div>
+
+<script>
+  function addImage(index){
+    document.getElementById("pic").innerHTML = "<img id = \"myImage\"" + " SRC='src/" + index + ".jpg'>";
+  }
+</script>
+
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </body>
