@@ -1,8 +1,12 @@
 var index = 1;
 var capacity = 10;
 var small_window = 0;
+//var click_on_window = 0;
 
 var callPage = function(tgt_index){
+
+  var w = window.innerWidth;
+  var h = window.innerHeight;
 
   if(tgt_index > capacity)
     return;
@@ -25,12 +29,13 @@ var callPage = function(tgt_index){
     close_button.onclick = function(){
       var tgt_img = document.getElementById("new_window");
 
-      console.log(tgt_img);
+      if(tgt_img != "undefined"){
+        tgt_img.parentNode.removeChild(tgt_img);
+        small_window = 0;
 
-      tgt_img.parentNode.removeChild(tgt_img);
-      small_window = 0;
+        }
+      };
 
-    }
     var x = document.createTextNode("X");
 
     close_button.appendChild(x);
@@ -47,17 +52,15 @@ var callPage = function(tgt_index){
 
   var myImage = document.getElementById("myImage");
   myImage.src = "src/" + tgt_index + ".jpg";
-
-
-  //"<li id = \"new_window\"> \n" + "<img id = \"myImage\" SRC='src/" + tgt_index + ".jpg'/>" + "<li> <button id = \"close_button\" onclick = \"close()\"> \nx\n </button> </li>" + "\n </li> ";
-  //document.getElementById(webId).innerHTML = "<img id = current";
+  return;
 }
 
-var close = function(){
-    var tgt_img = document.getElementById("myImage");
-    console.log(tgt_img);
+document.getElementById("all").addEventListener("click", function(){
 
-    tgt_img.parentNode.removeChild(tgt_img);
-}
-
-//$(document).ready(main);
+    var tgt_img = document.getElementById("new_window");
+    if(small_window !=0){
+      tgt_img.parentNode.removeChild(tgt_img);
+    }
+    //click_on_window = 0;
+    small_window = 0;
+  }, true);
