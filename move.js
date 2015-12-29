@@ -20,6 +20,18 @@ var callPage = function(tgt_index){
     myImage.id = "myImage";
     myImage.src = "src/" + tgt_index + ".jpg";
 
+    console.log(myImage.naturalWidth);
+
+    if(myImage.naturalWidth > w * 0.4){
+      myImage.style.width = "40%";
+      myImage.style.height = "auto";
+    }
+    if(myImage.naturalHeight > h * 0.5){
+      myImage.style.height = "50%";
+      myImage.style.width = "auto";
+    }
+
+
     var miniMenu = document.createElement("div");
     miniMenu.id = "miniMenu";
 
@@ -41,10 +53,9 @@ var callPage = function(tgt_index){
     close_button.appendChild(x);
 
     miniMenu.appendChild(close_button);
-
+    new_window.appendChild(miniMenu);
     new_window.appendChild(myImage);
 
-    new_window.appendChild(miniMenu);
     document.body.appendChild(new_window);
     small_window = 1;
     return;
