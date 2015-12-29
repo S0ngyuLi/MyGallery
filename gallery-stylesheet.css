@@ -28,7 +28,7 @@ body{
   z-index: 405;
   height: 25px;
   width: 25px;
-
+  top:-2%;
 }
 
 
@@ -47,8 +47,8 @@ width:93%;
 }
 
 .imge:hover{
-border-radius: 7px;
-box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
+border-radius: 8px;
+box-shadow: 0px 0px 0px 12px rgba(86, 186, 219, 0.4);
 
 }
 #all{
@@ -57,34 +57,28 @@ box-shadow: 0px 0px 0px 5px rgba(86, 186, 219, 0.4);
   width:100%;
 }
 
-#back{
-  position:fixed;
-  width: 100%;
-  height: 100%;
-
-}
 #left-colomn{
   z-index: 100;
   position:absolute;
   top:110px;
   left:10%;
-  width:26%;
+  width:26.6%;
   height:100%;
 }
 #middle-colomn{
   z-index: 200;
   position:absolute;
   top:110px;
-  left:37%;
-  width:26%;
+  left:36.6%;
+  width:26.6%;
   height:100%;
 }
 #right-colomn{
   z-index: 300;
   position:absolute;
   top:110px;
-  left:64%;
-  width:26%;
+  left:63.2%;
+  width:26.6%;
   height:100%;
 }
 

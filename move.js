@@ -42,7 +42,12 @@ var callPage = function(tgt_index){
       var tgt_img = document.getElementById("new_window");
 
       if(tgt_img != "undefined"){
-        tgt_img.parentNode.removeChild(tgt_img);
+        try{
+          tgt_img.parentNode.removeChild(tgt_img);
+        }
+        catch(error){
+          //nothing here
+        }
         small_window = 0;
 
         }
@@ -66,11 +71,14 @@ var callPage = function(tgt_index){
   return;
 }
 
-document.getElementById("all").addEventListener("click", function(){
+document.body.addEventListener("click", function(){
 
     var tgt_img = document.getElementById("new_window");
     if(small_window !=0){
-      tgt_img.parentNode.removeChild(tgt_img);
+      try{tgt_img.parentNode.removeChild(tgt_img);}
+      catch(error){
+        //nothing here
+      }
     }
     //click_on_window = 0;
     small_window = 0;
