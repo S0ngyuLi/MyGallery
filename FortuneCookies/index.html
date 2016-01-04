@@ -4,32 +4,34 @@
       签语饼
     </title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
 <body>
-  <nav>
-    我的签语饼
-  </nav>
-  <form id = "myform">
-    姓名: <input type="text" id="name"><br>
-    星座: <select id="zodiac">
-<option value="0">白羊</option>
-<option value="1">金牛</option>
-<option value="2">双子</option>
-<option value="3">巨蟹</option>
-<option value="4">狮子</option>
-<option value="5">处女</option>
-<option value="6">天秤</option>
-<option value="7">天蝎</option>
-<option value="8">射手</option>
-<option value="9">摩羯</option>
-<option value="10">水瓶</option>
-<option value="11">双鱼</option>
-
-</select>
-
-<br>
-    <input type="button" onclick = "test()" value = "掰开">
-  </form>
+  <div id = "nav">
+    <p id = "logo">
+      我的签语饼
+    </p>
+  </div>
+  <div id = "main_form">
+    <form id = "myform">
+      姓名: <input type="text" id="name" size = "8"><br><br>
+      星座: <select id="zodiac">
+        <option value="0">白羊</option>
+        <option value="1">金牛</option>
+        <option value="2">双子</option>
+        <option value="3">巨蟹</option>
+        <option value="4">狮子</option>
+        <option value="5">处女</option>
+        <option value="6">天秤</option>
+        <option value="7">天蝎</option>
+        <option value="8">射手</option>
+        <option value="9">摩羯</option>
+        <option value="10">水瓶</option>
+        <option value="11">双鱼</option>
+      </select><br><br>
+        <input id = "bigb" type="button" onclick = "test()" value = "掰开">
+      </form>
+  </div>
   <div id = "out">
   </div>
   <script>
