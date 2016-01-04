@@ -2,24 +2,39 @@ body{
   background-image: url(src/background.png);
   background-repeat: repeat-y，repeat-x;
   background-attachment: fixed;
+  text-align: center;
+  width: 100%;
+
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
 }
+
+#window_back{
+  z-index: 400;
+  position: fixed;
+  width: auto;
+
+
+}
+
 
 #new_window{
   list-style-type: none;
   padding: 20px 20px 20px 20px;
   border-radius: 7px;
-  position: fixed;
+  position: relative;
 
-  z-index: 400;
-  left:30%;
-  top:25%;
+  height:inherit;
+  margin-top: 20%;
 
   background-color: #007299;
 }
 
 #myImage{
   position: relative;
-  width: 100%;
+  width: inherit;
 }
 
 
@@ -55,6 +70,7 @@ box-shadow: 0px 0px 0px 12px rgba(86, 186, 219, 0.4);
   top: 100px;
   left: 0;
   width:100%;
+
 }
 
 #left-colomn{

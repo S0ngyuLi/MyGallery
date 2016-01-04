@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>
+      签语饼
+    </title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  </head>
+<body>
+  <nav>
+    我的签语饼
+  </nav>
+  <form id = "myform">
+    姓名: <input type="text" id="name"><br>
+    星座: <select id="zodiac">
+<option value="0">白羊</option>
+<option value="1">金牛</option>
+<option value="2">双子</option>
+<option value="3">巨蟹</option>
+<option value="4">狮子</option>
+<option value="5">处女</option>
+<option value="6">天秤</option>
+<option value="7">天蝎</option>
+<option value="8">射手</option>
+<option value="9">摩羯</option>
+<option value="10">水瓶</option>
+<option value="11">双鱼</option>
+
+</select>
+
+<br>
+    <input type="button" onclick = "test()" value = "掰开">
+  </form>
+  <div id = "out">
+  </div>
+  <script>
+  function test(){
+    //alert(typeof(document.getElementById("name").value));
+    //alert(document.getElementById("name").value);
+    var num_name = converse(document.getElementById("name").value);
+
+    var num_zodiac = document.getElementById("zodiac").value;
+
+    num_name = (num_name + 7 * num_zodiac) % 5;
+    var youWill = "You will ";
+    if(num_name == 0){
+      youWill += "have an unexpected journey on a new continent.";
+      document.getElementById("out").innerHTML =youWill;
+
+    }
+
+    else if (num_name == 1){
+      youWill += "find that a goal you have pursued for years comes true easily.";
+      document.getElementById("out").innerHTML =youWill;
+
+    }
+
+    else if (num_name == 2){
+      youWill += "take pride in a decision you made recently.";
+      document.getElementById("out").innerHTML =youWill;
+
+    }
+
+    else if (num_name == 3){
+      youWill += "lose some money but find your true love.";
+      document.getElementById("out").innerHTML =youWill;
+    }
+
+    else if (num_name == 4){
+      youWill += "come to know a friend for life.";
+      document.getElementById("out").innerHTML =youWill;
+    }
+
+
+  }
+
+  var converse = function(str){
+    var temp = 0;
+    for(var i = 0; i < str.length; ++i){
+        temp += str.charCodeAt(i);
+        console.log(str.charCodeAt(i));
+    }
+    return temp;
+  }
+  </script>
+</body>
+
+
+
+</html>
