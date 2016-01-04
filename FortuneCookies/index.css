@@ -6,13 +6,13 @@ body{
 #main_form{
   background-color: #e5e600;
   border-radius: 30px;
-  padding-left: 30%;
+  padding-left: 25%;
   padding-top: 5%;
   padding-bottom: 5%;
 
   height: inherit;
 
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
 }
 #myform{
@@ -66,5 +66,9 @@ body{
 }
 
 .formChar{
+  font-size: 300%;
+}
+
+#out{
   font-size: 300%;
 }
