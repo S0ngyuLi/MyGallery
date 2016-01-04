@@ -34,7 +34,7 @@ body{
 
 #bigb {
   padding: 15px 25px;
-  font-size: 24px;
+  font-size: 300px;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -54,7 +54,10 @@ body{
 }
 
 #name{
-  width:inherit;
+  font-size: 300%;
+}
+#zodiac{
+  font-size: 200%;
 }
 
 .formChar{
