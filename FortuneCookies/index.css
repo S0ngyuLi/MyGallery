@@ -5,15 +5,18 @@ body{
 }
 #main_form{
   background-color: #e5e600;
-  border-radius: 8px;
-  padding: 6px 6px 6px 6px;
-
+  border-radius: 30px;
+  padding-left: 30%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 
   height: inherit;
 
   width: 80%;
   margin: 0 auto;
-  align-content: center;
+}
+#myform{
+
 }
 #out{
   width: 50%;
@@ -34,7 +37,7 @@ body{
 
 #bigb {
   padding: 15px 25px;
-  font-size: 300px;
+  font-size: 300%;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -43,6 +46,8 @@ body{
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+
+
 }
 
 #bigb:hover {background-color: #3e8e41}
@@ -57,7 +62,7 @@ body{
   font-size: 300%;
 }
 #zodiac{
-  font-size: 200%;
+  font-size: 110%;
 }
 
 .formChar{
