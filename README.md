@@ -1,5 +1,5 @@
 # S0ngyuLi.github.io
-A collection of gadgets<br>
-Here is the link http://songyuli.com<br>
+A collection of gadgets.<br>
+http://songyuli.com<br>
 Now consists of two projects: Songyu's Gallery and Ansho<br>
-(Due to security reasons the repository  for Ansho has been taken down by me. Here is the url instead:http://songyuli.com/Ansho)
+(Due to security reasons the repository  for Ansho has been taken down by me. Here is the url instead: http://songyuli.com/Ansho)
